@@ -3,15 +3,32 @@
 <head>
 <title>WEB1-U.S.</title>
 <meta charset="utf-8">
+<style>
+body{margin:0}
+a{color: black;text-decoration: none;}
+h2{font-size:40px;text-align: center;
+  border-bottom:1px solid gray; margin:0; padding: 20px }
+.saw{color:gray;}
+#active{color:red;}
+#grid ol{border-right: 1px solid gray; width:100px; margin:0;
+  padding: 20px; padding-left:30px}
+#grid{display: grid; grid-template-columns: 150px 1fr}
+#article{padding-left: 15px}
+@media(max-width:700px){#grid{display: block;}
+#grid ol{border-right:none;}
+h2 {border-bottom: none;}}
+</style>
 </head>
 <body>
-  <h1><a href="index.html">최신 외국입법 정보</a></h1>
-<ul>
- <li><a href="1.html">1.프랑스</a></li>
- <li><a href="2.html"style="color:red;text-decoration:underline">2.미국</a></li>
- <li><a href="3.html">3.독일</a></li>
-</ul>
-<h2>학자금 대출 채무 면책 관련 미국 입법</h2>
+  <h2><a href="index.html">최신 외국입법 정보</a></h2>
+<div id="grid">
+<ol>
+ <li><a href="1.html"class="saw">프랑스</a></li>
+ <li><a href="2.html"class="saw"id="active">미국</a></li>
+ <li><a href="3.html">독일</a></li>
+</ol>
+<div id="article">
+<h3>학자금 대출 채무 면책 관련 미국 입법</h3>
 <p>
   <a href="http://law.go.kr/lsSc.do?tabMenuId=tab18&section=&eventGubun=060101&query=%EC%B1%84%EB%AC%B4%EC%9E%90%ED%9A%8C%EC%83%9D%EB%B0%8F%ED%8C%8C%EC%82%B0%EC%97%90#undefined" target="_blank" title="채무자회생및파산에관한법률">
   <채무자 회생 및 파산에 관한 법률></a>에 따르면 조세, 벌금, 임금 및 퇴직금
@@ -26,6 +43,6 @@
   <br>따라서 경제적 파탄에 처한 학자금 대출자들의 부담을 경감시키기 위하여
   미국 <연방파산법>에서와 같이 예외적으로 학자금대출 채권에 대하여 면책을
   허용하는 규정을 고려해 볼 필요가 있다.
-</p>
+</p></div>
 </body>
 </html>
